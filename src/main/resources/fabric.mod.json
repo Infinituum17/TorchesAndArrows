@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "torchesandarrows",
+	"version": "${version}",
+	"name": "Torches & Arrows",
+	"description": "This mod lets you throw torches using arrows!",
+	"authors": [
+		"Infinituum"
+	],
+	"contact": {
+		"sources": "https://github.com/Infinituum17/LabellingContainers"
+	},
+	"license": "MIT",
+	"icon": "assets/torchesandarrows/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "infinituum.torchesandarrows.ExampleMod",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "infinituum.torchesandarrows.ExampleModDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.8.20"
+	}
+}
