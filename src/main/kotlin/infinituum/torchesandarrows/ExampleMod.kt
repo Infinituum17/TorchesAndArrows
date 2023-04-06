@@ -1,12 +1,16 @@
 package infinituum.torchesandarrows
 
+import infinituum.torchesandarrows.registration.ItemRegistration
 import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
 
 object ExampleMod : ModInitializer {
-	private val logger = LoggerFactory.getLogger("torchesandarrows")
+	const val MODID = "torchesandarrows"
+	private val logger = LoggerFactory.getLogger(MODID)
 
 	override fun onInitialize() {
-		logger.info("Hello Fabric world!")
+		logger.info("Initializing...")
+
+		ItemRegistration.init()
 	}
 }
