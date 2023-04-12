@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "torchesandarrows:item/soul_torch_arrow"
+  }
+}

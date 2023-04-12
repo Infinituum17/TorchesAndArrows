@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "torchesandarrows:torch_arrow"
+    "torchesandarrows:torch_arrow",
+    "torchesandarrows:soul_torch_arrow"
   ]
 }
