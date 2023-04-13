@@ -4,6 +4,7 @@ import infinituum.torchesandarrows.providers.ItemTagProvider
 import infinituum.torchesandarrows.providers.ModelProvider
 import infinituum.torchesandarrows.providers.RecipeProvider
 import infinituum.torchesandarrows.providers.language.EnglishLangProvider
+import infinituum.torchesandarrows.providers.language.ItalianLangProvider
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator
 
@@ -20,5 +21,6 @@ object ExampleModDataGenerator : DataGeneratorEntrypoint {
 
 	private fun registerLanguages(pack: FabricDataGenerator.Pack) {
 		pack.addProvider(::EnglishLangProvider)
+		pack.addProvider(::ItalianLangProvider)
 	}
 }
